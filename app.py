@@ -24,7 +24,7 @@ def predict():
     elif pred[0] == 1:
         pred = "True"
 
-    return render_template('index.html', prediction_text='People with these features have heart attack: {}'.format(pred))
+    return render_template('index.html', prediction_text='Does this person tend to have heart attack?: {}'.format(pred))
 
 if __name__ == "__main__":
     app.run(debug=True)
